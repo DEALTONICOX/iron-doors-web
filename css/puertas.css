@@ -1,0 +1,327 @@
+.etiqueta-dorada {
+    display: block;
+    color: #d4af37;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+}
+
+.puertas-hero {
+    min-height: 680px;
+    display: flex;
+    align-items: center;
+    background-color: #050505;
+    background:
+        linear-gradient(to right, #050505 0%, rgba(5, 5, 5, 0.98) 30%, rgba(5, 5, 5, 0.62) 54%, rgba(5, 5, 5, 0.05) 100%),
+        url("../img/hero-puertas.png") right center / auto 100% no-repeat;
+}
+
+.puertas-hero-contenido {
+    width: min(100%, 1500px);
+    margin: 0 auto;
+    padding: 90px 55px;
+}
+
+.puertas-hero h1 {
+    max-width: 760px;
+    margin: 18px 0 24px;
+    font-size: clamp(2.7rem, 5vw, 5rem);
+    line-height: 1.06;
+}
+
+.puertas-hero p {
+    max-width: 590px;
+    margin: 0 0 34px;
+    color: #c0c0c0;
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+.puertas-hero-botones {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.puertas-presentacion {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 110px 35px;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: clamp(50px, 8vw, 110px);
+}
+
+.puertas-presentacion-imagen {
+    overflow: hidden;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.puertas-presentacion-imagen img {
+    width: 100%;
+    display: block;
+}
+
+.puertas-presentacion-texto h2,
+.titulo-seccion h2,
+.puertas-cta h2 {
+    margin: 15px 0 22px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.18;
+}
+
+.puertas-presentacion-texto p,
+.titulo-seccion p,
+.puertas-cta p {
+    color: #999999;
+    line-height: 1.8;
+}
+
+.puertas-presentacion-texto ul {
+    margin: 30px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 15px;
+    list-style: none;
+}
+
+.puertas-presentacion-texto li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #d0d0d0;
+    font-size: 0.88rem;
+}
+
+.puertas-presentacion-texto li i {
+    color: #d4af37;
+}
+
+.tipos-puertas {
+    padding: 105px 35px;
+    background-color: #0b0b0b;
+}
+
+.titulo-seccion {
+    max-width: 760px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.puertas-lista {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 18px;
+}
+
+.categoria-titulo {
+    margin: 50px 0 5px;
+    padding-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.25rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.45);
+}
+
+.categoria-titulo:first-child {
+    margin-top: 0;
+}
+
+.puerta-producto {
+    min-height: 230px;
+    padding: 18px 22px 18px 18px;
+    display: grid;
+    grid-template-columns: 230px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 32px;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.puerta-producto:hover {
+    transform: translateY(-3px);
+}
+
+.puerta-producto-imagen {
+    height: 195px;
+    overflow: hidden;
+    background-color: #080808;
+    border: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.puerta-producto-imagen img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+}
+
+.puerta-tipo {
+    color: #d4af37;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+}
+
+.puerta-producto-info h4 {
+    margin: 8px 0 10px;
+    font-size: clamp(1.1rem, 2vw, 1.45rem);
+}
+
+.puerta-producto-info p {
+    max-width: 600px;
+    margin: 0 0 16px;
+    color: #909090;
+    font-size: 0.82rem;
+    line-height: 1.65;
+}
+
+.puerta-producto-info strong {
+    color: #d8d8d8;
+    font-size: 0.86rem;
+}
+
+.btn-cotizar {
+    min-width: 145px;
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    color: #050505;
+    background-color: #d4af37;
+    font-size: 0.82rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-cotizar:hover {
+    background-color: #e5c45c;
+    transform: translateX(3px);
+}
+
+.puertas-beneficios {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 75px 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.puertas-beneficios div {
+    padding: 10px 45px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+    border-right: 1px solid #2a2a2a;
+}
+
+.puertas-beneficios div:last-child {
+    border-right: 0;
+}
+
+.puertas-beneficios strong {
+    color: #d4af37;
+    font-size: 1.05rem;
+}
+
+.puertas-beneficios span {
+    color: #888888;
+    font-size: 0.8rem;
+    line-height: 1.6;
+}
+
+.puertas-cta {
+    padding: 105px 30px;
+    text-align: center;
+    background: linear-gradient(135deg, #111111, #050505);
+    border-top: 1px solid rgba(212, 175, 55, 0.35);
+}
+
+.puertas-cta h2,
+.puertas-cta p {
+    max-width: 760px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.puertas-cta p {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 900px) {
+    .puertas-hero {
+        min-height: 620px;
+        background:
+            linear-gradient(to right, rgba(5, 5, 5, 0.95), rgba(5, 5, 5, 0.52)),
+            url("../img/hero-puertas.png") 65% center / cover no-repeat;
+    }
+
+    .puertas-presentacion {
+        grid-template-columns: 1fr;
+    }
+
+    .puerta-producto {
+        grid-template-columns: 190px minmax(0, 1fr);
+        gap: 22px;
+    }
+
+    .puerta-producto-imagen {
+        grid-row: 1 / span 2;
+    }
+
+    .btn-cotizar {
+        grid-column: 2;
+        justify-self: start;
+    }
+}
+
+@media (max-width: 650px) {
+    .puertas-hero-contenido {
+        padding: 75px 25px;
+    }
+
+    .puertas-hero {
+        background:
+            linear-gradient(rgba(5, 5, 5, 0.72), rgba(5, 5, 5, 0.9)),
+            url("../img/hero-puertas.png") 68% center / cover no-repeat;
+    }
+
+    .puertas-presentacion,
+    .tipos-puertas {
+        padding: 75px 24px;
+    }
+
+    .puerta-producto {
+        padding: 14px;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .puerta-producto-imagen {
+        height: 245px;
+        grid-row: auto;
+    }
+
+    .btn-cotizar {
+        width: 100%;
+        grid-column: auto;
+    }
+
+    .puertas-beneficios {
+        grid-template-columns: 1fr;
+        padding: 55px 24px;
+    }
+
+    .puertas-beneficios div {
+        padding: 24px 10px;
+        border-right: 0;
+        border-bottom: 1px solid #2a2a2a;
+    }
+
+    .puertas-beneficios div:last-child {
+        border-bottom: 0;
+    }
+}

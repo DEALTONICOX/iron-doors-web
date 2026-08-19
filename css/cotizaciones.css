@@ -1,0 +1,182 @@
+.contador-menu {
+    min-width: 20px;
+    height: 20px;
+    padding: 0 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #050505;
+    font-size: 0.67rem;
+    background-color: #d4af37;
+    border-radius: 50px;
+}
+
+.cotizacion-pagina {
+    min-height: 75vh;
+    padding: 80px 35px 110px;
+    background-color: #080808;
+}
+
+.cotizacion-encabezado {
+    max-width: 1250px;
+    margin: 0 auto 55px;
+}
+
+.cotizacion-encabezado > span,
+.resumen-etiqueta {
+    color: #d4af37;
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+}
+
+.cotizacion-encabezado h1 {
+    margin: 12px 0 14px;
+    font-size: clamp(2.3rem, 5vw, 4rem);
+}
+
+.cotizacion-encabezado p {
+    margin: 0;
+    color: #929292;
+}
+
+.cotizacion-contenedor {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 350px;
+    align-items: start;
+    gap: 35px;
+}
+
+.cotizacion-lista-cabecera {
+    padding-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #292929;
+}
+
+.cotizacion-lista-cabecera h2 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.cotizacion-lista-cabecera span {
+    color: #8d8d8d;
+    font-size: 0.78rem;
+}
+
+.cotizacion-item {
+    padding: 24px 0;
+    display: grid;
+    grid-template-columns: 125px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #242424;
+}
+
+.cotizacion-item-imagen {
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #0d0d0d;
+    border: 1px solid rgba(212, 175, 55, 0.4);
+}
+
+.cotizacion-item-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cotizacion-item-info span {
+    color: #d4af37;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+}
+
+.cotizacion-item-info h3 {
+    margin: 7px 0 8px;
+    font-size: 1.08rem;
+}
+
+.cotizacion-item-info p {
+    margin: 0;
+    color: #8f8f8f;
+    font-size: 0.78rem;
+}
+
+.eliminar-item {
+    width: 38px;
+    height: 38px;
+    color: #999999;
+    background: transparent;
+    border: 1px solid #333333;
+    cursor: pointer;
+}
+
+.eliminar-item:hover {
+    color: #ffffff;
+    border-color: #d4af37;
+}
+
+.cotizacion-vacia {
+    padding: 80px 25px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cotizacion-vacia.visible { display: flex; }
+.cotizacion-vacia > i { color: #d4af37; font-size: 3rem; }
+.cotizacion-vacia h3 { margin: 20px 0 8px; }
+.cotizacion-vacia p { max-width: 470px; margin: 0 0 25px; color: #888888; font-size: 0.84rem; line-height: 1.7; }
+
+.cotizacion-resumen {
+    position: sticky;
+    top: 25px;
+    padding: 30px;
+    background-color: #111111;
+    border-top: 2px solid #d4af37;
+}
+
+.cotizacion-resumen h2 { margin: 10px 0 28px; font-size: 1.25rem; }
+.resumen-fila { padding: 16px 0; display: flex; justify-content: space-between; color: #aaa; font-size: 0.82rem; border-top: 1px solid #292929; border-bottom: 1px solid #292929; }
+.resumen-fila strong { color: #fff; }
+.resumen-nota { margin: 22px 0; display: flex; gap: 12px; color: #888; }
+.resumen-nota i { margin-top: 3px; color: #d4af37; }
+.resumen-nota p { margin: 0; font-size: 0.73rem; line-height: 1.6; }
+
+.enviar-cotizacion,
+.vaciar-cotizacion {
+    width: 100%;
+    padding: 13px 16px;
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.enviar-cotizacion { color: #050505; background-color: #d4af37; border: 0; }
+.enviar-cotizacion:disabled { opacity: .35; cursor: not-allowed; }
+.vaciar-cotizacion { margin-top: 10px; color: #ccc; background: transparent; border: 1px solid #333; }
+.seguir-catalogo { margin-top: 22px; display: block; color: #999; font-size: 0.76rem; text-align: center; }
+.seguir-catalogo:hover { color: #d4af37; }
+
+@media (max-width: 850px) {
+    .cotizacion-contenedor { grid-template-columns: 1fr; }
+    .cotizacion-resumen { position: static; }
+}
+
+@media (max-width: 600px) {
+    .cotizacion-pagina { padding: 60px 22px 80px; }
+    .cotizacion-item { grid-template-columns: 90px minmax(0, 1fr) auto; gap: 14px; }
+    .cotizacion-item-imagen { height: 90px; }
+    .cotizacion-item-info h3 { font-size: .9rem; }
+    .cotizacion-item-info p { display: none; }
+}

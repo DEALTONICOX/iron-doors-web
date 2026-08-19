@@ -1,0 +1,17 @@
+.pagina-cortinas .puertas-hero {
+    background:
+        linear-gradient(to right, #050505 0%, rgba(5,5,5,.98) 30%, rgba(5,5,5,.58) 54%, rgba(5,5,5,.04) 100%),
+        url("../img/hero-cortinas.png") right center / cover no-repeat;
+}
+
+@media (max-width: 900px) {
+    .pagina-cortinas .puertas-hero {
+        background: linear-gradient(to right, rgba(5,5,5,.95), rgba(5,5,5,.5)), url("../img/hero-cortinas.png") 65% center / cover no-repeat;
+    }
+}
+
+@media (max-width: 650px) {
+    .pagina-cortinas .puertas-hero {
+        background: linear-gradient(rgba(5,5,5,.72), rgba(5,5,5,.9)), url("../img/hero-cortinas.png") 68% center / cover no-repeat;
+    }
+}

@@ -1,0 +1,485 @@
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+    position: relative;
+
+    min-height: 50px;
+    background-color: #000000;
+
+    background:
+        linear-gradient(
+            to right,
+            #000000 0%,
+            #000000 25%,
+            rgba(0, 0, 0, 0.93) 38%,
+            rgba(0, 0, 0, 0.62) 54%,
+            rgba(0, 0, 0, 0.14) 76%,
+            rgba(0, 0, 0, 0.02) 100%
+        ),
+        url("../img/imageninicio.png") right center / auto 100% no-repeat;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero-overlay {
+    width: 100%;
+}
+
+
+.hero-content {
+    max-width: 1600px;
+
+    margin: 0 auto;
+
+    padding: 80px 40px;
+}
+
+
+.hero-subtitle {
+    margin: 0 0 15px;
+
+    color: #d4af37;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+}
+
+
+.hero h1 {
+    max-width: 750px;
+
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    font-weight: 700;
+
+    line-height: 1.1;
+
+    letter-spacing: 0.02em;
+}
+
+
+.hero-description {
+    max-width: 600px;
+
+    margin: 0 0 35px;
+
+    color: #dddddd;
+
+    font-size: 1.05rem;
+    font-weight: 400;
+
+    line-height: 1.8;
+}
+
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================
+   PRESENTACIÓN
+========================================= */
+
+.presentacion {
+    background-color: #050505;
+
+    padding: 110px 25px;
+
+    text-align: center;
+}
+
+
+.presentacion-contenido {
+    max-width: 850px;
+
+    margin: 0 auto;
+}
+
+
+.seccion-etiqueta {
+    display: block;
+
+    margin-bottom: 15px;
+
+    color: #d4af37;
+
+    font-size: 0.8rem;
+    font-weight: 600;
+
+    letter-spacing: 0.2em;
+}
+
+
+.presentacion h2,
+.seccion-titulo h1,
+.seccion-titulo h2,
+.seccion-cotizacion h2 {
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: clamp(2rem, 4vw, 3rem);
+
+    line-height: 1.2;
+}
+
+
+.presentacion p {
+    margin: 0 auto 18px;
+
+    color: #bdbdbd;
+
+    font-size: 0.95rem;
+    font-weight: 400;
+
+    line-height: 1.9;
+}
+
+
+.link-dorado {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 15px;
+
+    color: #d4af37;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition:
+        gap 0.3s ease,
+        color 0.3s ease;
+}
+
+
+.link-dorado:hover {
+    color: #e5c45c;
+
+    gap: 15px;
+}
+
+
+/* =========================================
+   PRODUCTOS
+========================================= */
+
+.productos {
+    background-color: #0b0b0b;
+
+    padding: 100px 25px;
+}
+
+
+.seccion-titulo {
+    max-width: 800px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.seccion-titulo p {
+    margin: 0;
+
+    color: #999999;
+
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+
+/* Grid */
+
+.productos-grid {
+    max-width: 1200px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* =========================================
+   TARJETAS DE PRODUCTOS
+========================================= */
+
+.producto-card {
+    overflow: hidden;
+
+    background-color: #111111;
+
+    border: 1px solid rgba(212, 175, 55, 0.35);
+
+    border-radius: 8px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.producto-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #d4af37;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Imagen */
+
+.producto-imagen {
+    width: 100%;
+
+    height: 270px;
+
+    overflow: hidden;
+
+    background-color: #080808;
+}
+
+
+.producto-imagen img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: contain;
+
+    transition: filter 0.4s ease;
+}
+.producto-card:hover .producto-imagen img {
+    filter: brightness(1.08);
+}
+
+
+/* Contenido */
+
+.producto-contenido {
+    padding: 28px;
+}
+
+
+.producto-contenido h3 {
+    margin: 0 0 12px;
+
+    color: #ffffff;
+
+    font-size: 1.3rem;
+}
+
+
+.producto-contenido p {
+    min-height: 75px;
+
+    margin: 0 0 20px;
+
+    color: #999999;
+
+    font-size: 0.85rem;
+    font-weight: 400;
+
+    line-height: 1.7;
+}
+
+
+.producto-link {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #d4af37;
+
+    font-size: 0.85rem;
+    font-weight: 600;
+
+    transition: gap 0.3s ease;
+}
+
+
+.producto-link:hover {
+    gap: 15px;
+}
+
+
+/* =========================================
+   TARJETA SIN IMAGEN
+========================================= */
+
+.producto-card-sin-imagen {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.producto-icono {
+    height: 270px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            #151515,
+            #080808
+        );
+}
+
+
+.producto-icono i {
+    color: #d4af37;
+
+    font-size: 5rem;
+}
+
+
+/* =========================================
+   SECCIÓN COTIZACIÓN
+========================================= */
+
+.seccion-cotizacion {
+    position: relative;
+
+    padding: 110px 25px;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.92)
+        ),
+        url("../img/portonmadera.png") center / cover no-repeat;
+
+    text-align: center;
+}
+
+
+.cotizacion-contenido {
+    max-width: 750px;
+
+    margin: 0 auto;
+}
+
+
+.seccion-cotizacion p {
+    max-width: 650px;
+
+    margin: 0 auto 30px;
+
+    color: #bdbdbd;
+
+    font-size: 0.95rem;
+    font-weight: 400;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+    .hero {
+        min-height: 600px;
+        background:
+            linear-gradient(
+                to right,
+                #000000 0%,
+                rgba(0, 0, 0, 0.94) 35%,
+                rgba(0, 0, 0, 0.58) 72%,
+                rgba(0, 0, 0, 0.32) 100%
+            ),
+            url("../img/imageninicio.png") 65% center / cover no-repeat;
+    }
+
+    .hero-content {
+        padding: 70px 30px;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .hero {
+        min-height: 600px;
+        background:
+            linear-gradient(
+                rgba(0, 0, 0, 0.68),
+                rgba(0, 0, 0, 0.86)
+            ),
+            url("../img/imageninicio.png") 58% center / cover no-repeat;
+    }
+
+    .hero-content {
+        padding: 60px 25px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-description {
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .productos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .presentacion,
+    .productos,
+    .seccion-cotizacion {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+
+}
