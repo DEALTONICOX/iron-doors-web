@@ -42,7 +42,7 @@
 .hero-subtitle {
     margin: 0 0 15px;
 
-    color: #d4af37;
+    color: #c0c0c0;
 
     font-size: 0.9rem;
     font-weight: 600;
@@ -118,7 +118,7 @@
 
     margin-bottom: 15px;
 
-    color: #d4af37;
+    color: #c0c0c0;
 
     font-size: 0.8rem;
     font-weight: 600;
@@ -162,7 +162,7 @@
 
     margin-top: 15px;
 
-    color: #d4af37;
+    color: #c0c0c0;
 
     font-size: 0.9rem;
     font-weight: 600;
@@ -174,7 +174,7 @@
 
 
 .link-dorado:hover {
-    color: #e5c45c;
+    color: #e0e0e0;
 
     gap: 15px;
 }
@@ -235,7 +235,7 @@
 
     background-color: #111111;
 
-    border: 1px solid rgba(212, 175, 55, 0.35);
+    border: 1px solid rgba(192, 192, 192, 0.35);
 
     border-radius: 8px;
 
@@ -249,7 +249,7 @@
 .producto-card:hover {
     transform: translateY(-7px);
 
-    border-color: #d4af37;
+    border-color: #c0c0c0;
 
     box-shadow:
         0 15px 35px rgba(0, 0, 0, 0.5);
@@ -321,7 +321,7 @@
 
     gap: 10px;
 
-    color: #d4af37;
+    color: #c0c0c0;
 
     font-size: 0.85rem;
     font-weight: 600;
@@ -364,7 +364,7 @@
 
 
 .producto-icono i {
-    color: #d4af37;
+    color: #c0c0c0;
 
     font-size: 5rem;
 }

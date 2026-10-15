@@ -1,7 +1,7 @@
 .catalogo-completo {
     padding: 105px 35px;
     background-color: #080808;
-    border-top: 1px solid rgba(212, 175, 55, 0.25);
+    border-top: 1px solid rgba(192, 192, 192, 0.25);
 }
 
 .catalogo-completo-titulo {
@@ -12,7 +12,7 @@
 
 .catalogo-completo-titulo > span,
 .catalogo-grupo-etiqueta {
-    color: #d4af37;
+    color: #c0c0c0;
     font-size: 0.75rem;
     font-weight: 600;
     letter-spacing: 0.18em;
@@ -44,7 +44,7 @@
     align-items: end;
     justify-content: space-between;
     gap: 25px;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.45);
+    border-bottom: 1px solid rgba(192, 192, 192, 0.45);
 }
 
 .catalogo-grupo-cabecera h3 {
@@ -58,7 +58,7 @@
 }
 
 .catalogo-grupo-cabecera > a:hover {
-    color: #d4af37;
+    color: #c0c0c0;
 }
 
 .catalogo-modelos {
@@ -76,7 +76,7 @@
 
 .catalogo-modelo:hover {
     transform: translateY(-5px);
-    border-color: #d4af37;
+    border-color: #c0c0c0;
 }
 
 .catalogo-modelo-imagen {
@@ -100,7 +100,7 @@
 }
 
 .catalogo-modelo-tipo {
-    color: #d4af37;
+    color: #c0c0c0;
     font-size: 0.66rem;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -134,13 +134,13 @@
 .catalogo-cotizar {
     padding: 9px 15px;
     color: #050505;
-    background-color: #d4af37;
+    background-color: #c0c0c0;
     font-size: 0.73rem;
     font-weight: 600;
 }
 
 .catalogo-cotizar:hover {
-    background-color: #e5c45c;
+    background-color: #e0e0e0;
 }
 
 @media (max-width: 900px) {

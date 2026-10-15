@@ -7,7 +7,7 @@
     justify-content: center;
     color: #050505;
     font-size: 0.67rem;
-    background-color: #d4af37;
+    background-color: #c0c0c0;
     border-radius: 50px;
 }
 
@@ -24,7 +24,7 @@
 
 .cotizacion-encabezado > span,
 .resumen-etiqueta {
-    color: #d4af37;
+    color: #c0c0c0;
     font-size: 0.76rem;
     font-weight: 600;
     letter-spacing: 0.18em;
@@ -83,7 +83,7 @@
     justify-content: center;
     overflow: hidden;
     background-color: #0d0d0d;
-    border: 1px solid rgba(212, 175, 55, 0.4);
+    border: 1px solid rgba(192, 192, 192, 0.4);
 }
 
 .cotizacion-item-imagen img {
@@ -93,7 +93,7 @@
 }
 
 .cotizacion-item-info span {
-    color: #d4af37;
+    color: #c0c0c0;
     font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.12em;
@@ -121,7 +121,7 @@
 
 .eliminar-item:hover {
     color: #ffffff;
-    border-color: #d4af37;
+    border-color: #c0c0c0;
 }
 
 .cotizacion-vacia {
@@ -133,7 +133,7 @@
 }
 
 .cotizacion-vacia.visible { display: flex; }
-.cotizacion-vacia > i { color: #d4af37; font-size: 3rem; }
+.cotizacion-vacia > i { color: #c0c0c0; font-size: 3rem; }
 .cotizacion-vacia h3 { margin: 20px 0 8px; }
 .cotizacion-vacia p { max-width: 470px; margin: 0 0 25px; color: #888888; font-size: 0.84rem; line-height: 1.7; }
 
@@ -142,14 +142,14 @@
     top: 25px;
     padding: 30px;
     background-color: #111111;
-    border-top: 2px solid #d4af37;
+    border-top: 2px solid #c0c0c0;
 }
 
 .cotizacion-resumen h2 { margin: 10px 0 28px; font-size: 1.25rem; }
 .resumen-fila { padding: 16px 0; display: flex; justify-content: space-between; color: #aaa; font-size: 0.82rem; border-top: 1px solid #292929; border-bottom: 1px solid #292929; }
 .resumen-fila strong { color: #fff; }
 .resumen-nota { margin: 22px 0; display: flex; gap: 12px; color: #888; }
-.resumen-nota i { margin-top: 3px; color: #d4af37; }
+.resumen-nota i { margin-top: 3px; color: #c0c0c0; }
 .resumen-nota p { margin: 0; font-size: 0.73rem; line-height: 1.6; }
 
 .enviar-cotizacion,
@@ -162,11 +162,11 @@
     cursor: pointer;
 }
 
-.enviar-cotizacion { color: #050505; background-color: #d4af37; border: 0; }
+.enviar-cotizacion { color: #050505; background-color: #c0c0c0; border: 0; }
 .enviar-cotizacion:disabled { opacity: .35; cursor: not-allowed; }
 .vaciar-cotizacion { margin-top: 10px; color: #ccc; background: transparent; border: 1px solid #333; }
 .seguir-catalogo { margin-top: 22px; display: block; color: #999; font-size: 0.76rem; text-align: center; }
-.seguir-catalogo:hover { color: #d4af37; }
+.seguir-catalogo:hover { color: #c0c0c0; }
 
 @media (max-width: 850px) {
     .cotizacion-contenedor { grid-template-columns: 1fr; }
